@@ -1,4 +1,4 @@
-obj-m := hello.o
+obj-m := my_hello.o
 
 KDIR := /home/chermi/projects/kernel/linux-stable
 all:
