@@ -26,7 +26,7 @@ static int __init hello_init(void)
 
 static void __exit hello_exit(void)
 {
-	pr_alert("Good bay, %s\n", whom);
+	pr_alert("Goodbye, %s\n", whom);
 }
 
 module_init(hello_init);
