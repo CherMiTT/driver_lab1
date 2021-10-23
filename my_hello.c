@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: GPL-2.0
+
+
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/kernel.h>
@@ -17,10 +20,9 @@ MODULE_PARM_DESC(number, "Number of greetings");
 static int __init hello_init(void)
 {
 	int i;
-	for(i = 0; i < number; ++i) 
-	{
+
+	for (i = 0; i < number; ++i)
 		pr_alert("Hello, %s from %s (greeting %d)\n", whom, from, i);
-	}
 	return 0;
 }
 
